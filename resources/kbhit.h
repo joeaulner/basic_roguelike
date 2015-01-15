@@ -1,4 +1,6 @@
 /*****************************************************************************
+  Many thanks to Chris Giese for posting this code. I had no idea how to
+  directly manipulate terminal I/O; this was extremely helpful.
   kbhit() and getch() for Linux/UNIX
   Chris Giese <geezer@execpc.com>   http://my.execpc.com/~geezer
   Release date: ?
