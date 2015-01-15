@@ -1,20 +1,20 @@
-/*******************************************************************************
-   A basic implementation of the concepts that will be utilized in the roguelike
-   I intend to construct from the resources located in the "resources"
+/******************************************************************************
+   A basic implementation of the concepts that will be utilized in the rogulike
+   I intend to construct from the reources located in the "recources"
    directory. This is a very rough testing environment, and will certainly need
    many modifications and much more polishing before it is ready for play.
 
    Intended to be compiled using the gcc compiler with the following flags:
         -Wall -ansi -std=c99
  ******************************************************************************/
-
 #include <stdio.h> /* printf() */
 #include "resources/display.h" /* ansi escape codes, character codes, Glyph */
 #include "resources/monsters.h" /* Monster */
 #include "resources/maps.h" /* Tile, map printing */
 #include "resources/kbhit.h" /* kbhit(), getch() */
 #include "resources/movement.h" /* various move methods */
-
+/******************************************************************************
+ ******************************************************************************/
 int main() {
     Tile *map[MAP_WIDTH][MAP_HEIGHT]; /* stores a map of tiles */
 

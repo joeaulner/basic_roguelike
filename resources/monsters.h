@@ -1,17 +1,25 @@
-
+/******************************************************************************
+  A header file used to define what characteristics a Monster has, as well as
+  provide methods for generating new monsters. At this point it is unknown
+  whether different types of monsters will be represented with their own
+  structs or if the one struct will be sufficient. The monster AI's may also be
+  included in this file, but they could be stored in their own files as well.
+ ******************************************************************************/
 #ifndef MONSTER_RESOURCES_H
 #define MONSTER_RESOURCES_H
 
 #include "display.h"
-
-/* used to represent the characteristics of a monster */
+/*****************************************************************************
+   Used to represent the characteristics of a monster
+ *****************************************************************************/
 typedef struct {
     Glyph *glyph;
     int x;
     int y;
 } Monster;
-
-/* allocate memory for and initialize the fields of a new Monster */
+/******************************************************************************
+   Allocate memory for and initialize the fields of a new Monster
+ ******************************************************************************/
 Monster *newMonster(int symbol, char *style, int x, int y) {
     Monster *monster = (Monster*)malloc(sizeof(Monster));
     if (monster == NULL) {
@@ -25,12 +33,16 @@ Monster *newMonster(int symbol, char *style, int x, int y) {
 
     return monster;
 }
-
+/******************************************************************************
+  Call upon the newMonster function to generate a new player monster
+ ******************************************************************************/
 Monster *newPlayer(int x, int y) {
     Monster *player = newMonster(PLAYER, INTENSE F_GREEN, x, y);
     return player;
 }
-
+/******************************************************************************
+  Call upon the newMonster function to generate a new fungus monster
+ ******************************************************************************/
 Monster *newFungus(int x, int y) {
     Monster *fungus = newMonster(FUNGUS, NORMAL F_GREEN, x, y);
     return fungus;

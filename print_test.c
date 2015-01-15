@@ -1,8 +1,16 @@
+/******************************************************************************
+  A simple executable designed to test printing formatted I/O using the ansi
+  escape sequences defined in display.h, as well as using cp437 characters to
+  draw "rooms" and "monsters."
 
+  Intended to be compiled using the gcc compiler with the following flags:
+    -Wall -ansi -std=c99
+ ******************************************************************************/
 #include <stdio.h>
 #include <stdlib.h>
 #include "resources/display.h"
-
+/******************************************************************************
+ ******************************************************************************/
 int main() {
     int i;
     Glyph *player = newGlyph(PLAYER, F_BLUE INTENSE);

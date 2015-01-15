@@ -1,12 +1,18 @@
-
+/******************************************************************************
+  A header file that defines various ansi escape sequences used to print
+  formatted output. This file also contains enumerations that identify which
+  cp437 characters will be used to represent what object in a map.
+ ******************************************************************************/
 #ifndef TILE_RESOURCES_H
 #define TILE_RESOURCES_H
-
+/******************************************************************************
+ ******************************************************************************/
 #include <string.h> /* strcpy() */
 #include <stdlib.h> /* malloc(), exit() */
-
-/* The following is a list of ansi escape codes
-   used to change the foreground color of output */
+/******************************************************************************
+  The following is a list of ansi escape codes
+  used to change the foreground color of output
+ ******************************************************************************/
 #define F_BLACK     "\x1b[30m"
 #define F_RED       "\x1b[31m"
 #define F_GREEN     "\x1b[32m"
@@ -15,9 +21,10 @@
 #define F_MAGENTA   "\x1b[35m"
 #define F_CYAN      "\x1b[36m"
 #define F_WHITE     "\x1b[37m"
-
-/* The following is a list of ansi escape codes
-   used to change the background color of output */
+/******************************************************************************
+  The following is a list of ansi escape codes
+  used to change the background color of output
+ ******************************************************************************/
 #define B_BLACK     "\x1b[40m"
 #define B_RED       "\x1b[41m"
 #define B_GREEN     "\x1b[42m"
@@ -26,7 +33,10 @@
 #define B_MAGENTA   "\x1b[45m"
 #define B_CYAN      "\x1b[46m"
 #define B_WHITE     "\x1b[47m"
-
+/******************************************************************************
+  The following is a list of ansi escape codes used to
+  define miscellaneous characteristics of formatted output
+ ******************************************************************************/
 #define UNDERLINE   "\x1b[4m" /* toggle underlined output on */
 #define UNDERLINE_O "\x1b[24m" /* toggle underlined output off */
 #define NEGATIVE    "\x1b[7m" /* set output to negative */
@@ -39,7 +49,6 @@
 #define RESET       "\x1b[0m" /* set foreground/background colors to default */
 
 #define STYLE_LEN   41 /* the maximum expected length of a style string */
-
 /******************************************************************************
    cp437 characters used to represent solid and empty fills
  ******************************************************************************/
@@ -76,7 +85,8 @@ typedef struct {
 Glyph *newGlyph(int symbol, char *style) {
     Glyph *glyph = (Glyph*)malloc(sizeof(Glyph));
     if (glyph == NULL) {
-        fprintf(stderr, "ERROR - failed to allocate Glyph memory - TERMINATING...\n");
+        fprintf(stderr,
+                "ERROR - failed to allocate Glyph memory - TERMINATING...\n");
         exit(1);
     }
 

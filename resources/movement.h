@@ -1,7 +1,9 @@
-
+/******************************************************************************
+  A header file with methods used to move monsters in a map constructed of
+  Tiles in one of 8 directions (the 4 cardinal directions and their diagonals).
+ ******************************************************************************/
 #include <stdio.h>
 #include "maps.h"
-
 /******************************************************************************
   moves the provided monster to the NORTH on the provided map
  ******************************************************************************/

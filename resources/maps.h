@@ -1,14 +1,19 @@
-
+/******************************************************************************
+  A header file used to define the default map width & height, as well as a
+  method used to print a whole map of the default size. In the future, this will
+  also be the location of the methods used to randomly generate the map.
+ ******************************************************************************/
 #ifndef MAP_RESOURCES_H
 #define MAP_RESOURCES_H
-
+/******************************************************************************
+ ******************************************************************************/
 #include <stdlib.h> /* malloc(), exit() */
 #include "display.h" /* ansi escape codes, character codes, Glyph */
 #include "monsters.h" /* Monster */
-
+/******************************************************************************
+ ******************************************************************************/
 #define MAP_WIDTH   45
 #define MAP_HEIGHT  18
-
 /******************************************************************************
   set of available user commands
  ******************************************************************************/
