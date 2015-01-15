@@ -1,0 +1,54 @@
+Project Name: basic_roguelike
+Creator: Joseph A.
+Start Date: 10 Jan 2015
+
+
+OVERVIEW:
+
+All header files are currently located in the "resources" directory. At the
+moment, my inclusion system is very sloppy. The existing header files will need
+to be restructured, renamed, etc. I plan on looking into the Deep C
+presentations and existing github projects in order to determine what the best
+approach will be for structuring my project.
+
+The project will also need to be migrated over to one of my Raspberry Pi
+computers as it matures. More than likely I will still probably be accessing it
+via SSH, but it will allow me to install and utilize additional libraries. I
+would also like for the life of this project to extend past my graduation date.
+
+
+CURRENT EXECUTABLES:
+
+printing_test.c:
+This file is designed to test the various possibilities of printing colored
+output using ansi escape codes.
+
+test.c:
+This file is designed to test the actual implementation of the various aspects
+of rougulikes such as map representation, movement, attack, defense, etc.
+
+
+CURRENT HEADERS:
+
+display.h
+This file contains the definitions of various ansi escape sequences used to
+print formatted output as well as enums for the character representations of
+various symbols from cp437.
+
+kbhit.h
+This file, provided by Chris Giese, provides the kbhit() and getch functions
+used to listen for and retrieve raw, single-character input from the keyboard.
+
+maps.h
+This file was being used as a dump file for structs/methods that required the
+inclusion of multiple header files in the resources folder. It has been renamed
+and is intended to be a location for map-related structs and methods.
+
+monster.h
+This file is used for structs/methods related to monsters and their generation.
+This may also be the location of monster AI's in the future, but depending on
+how complex they get, they might require their own header or mayble data files.
+
+movement.h
+This file contains the methods required to move monsters in the 8 possible
+directions in a 2-dimensional map constructed of Tile structs.
