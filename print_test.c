@@ -56,7 +56,7 @@ int main() {
     printf("Here is an example player glyph:\n %s%c\n\n" RESET,
             player->style, player->symbol);
 
-    /* show the cp 437 characters */
+    /* show the cp437 characters */
     printf("And here are characters 32-255 from the cp437:" F_GREEN);
     for (i = 32; i < 256; i++) {
         if (i % 32 == 0) {
@@ -78,3 +78,4 @@ int main() {
 
     return 0;
 }
+

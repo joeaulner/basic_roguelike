@@ -78,3 +78,4 @@ void printMap(Tile *map[MAP_WIDTH][MAP_HEIGHT]) {
 }
 
 #endif /* MAP_RESOURCES_H */
+

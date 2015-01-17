@@ -47,7 +47,7 @@ and is intended to be a location for map-related structs and methods.
 monster.h
 This file is used for structs/methods related to monsters and their generation.
 This may also be the location of monster AI's in the future, but depending on
-how complex they get, they might require their own header or mayble data files.
+how complex they get, they might require their own header or maybe data files.
 
 movement.h
 This file contains the methods required to move monsters in the 8 possible

@@ -49,3 +49,4 @@ Monster *newFungus(int x, int y) {
 }
 
 #endif /* MONSTER_RESOURCES_H */
+

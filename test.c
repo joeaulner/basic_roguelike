@@ -1,8 +1,9 @@
 /******************************************************************************
-   A basic implementation of the concepts that will be utilized in the rogulike
-   I intend to construct from the reources located in the "recources"
-   directory. This is a very rough testing environment, and will certainly need
-   many modifications and much more polishing before it is ready for play.
+   A basic implementation of the concepts that will be utilized in the
+   roguelike I intend to construct from the resources located in the
+   "resources" directory. This is a very rough testing environment, and will
+   certainly need many modifications and much more polishing before it is ready
+   for any sort of play.
 
    Intended to be compiled using the gcc compiler with the following flags:
         -Wall -ansi -std=c99
@@ -80,3 +81,4 @@ int main() {
 
     return 0;
 }
+

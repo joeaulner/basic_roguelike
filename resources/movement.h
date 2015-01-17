@@ -136,3 +136,4 @@ void moveSoutheast(Monster *monster, Tile *map[MAP_WIDTH][MAP_HEIGHT]) {
         map[x][y] -> monster = NULL;
     }
 }
+
