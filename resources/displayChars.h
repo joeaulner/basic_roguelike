@@ -18,7 +18,9 @@ enum wallChars {
     HORZ=196, VERT=179,
     CNR_NW=218, CNR_NE=191, CNR_SW=192, CNR_SE=217,
     TEE_N=193, TEE_E=195, TEE_S=194, TEE_W=180,
-    CROSS=197
+    CROSS=197,
+
+    DOOR=47
 };
 /******************************************************************************
   cp437 characters used to represent monsters

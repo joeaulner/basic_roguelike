@@ -16,6 +16,12 @@ computers as it matures. More than likely I will still probably be accessing it
 via SSH, but it will allow me to install and utilize additional libraries. I
 would also like for the life of this project to extend past my graduation date.
 
+The current map generation algorithm randomly generates rectangular rooms with
+dimensions up to 9 tiles high and 23 tiles wide. A total of 17 rooms are
+generated. At this point, there is no way to add doors or connect rooms to each
+other via corridors. I am not happy with the room generation at the moment, and
+am looking into alternative strategies.
+
 
 CURRENT EXECUTABLES:
 
@@ -30,25 +36,22 @@ of rougulikes such as map representation, movement, attack, defense, etc.
 
 CURRENT HEADERS:
 
-display.h
+displayChars.h
+This file contains enums defining the intended usage of various cp437 symbols.
+
+displayStyle.h
 This file contains the definitions of various ansi escape sequences used to
-print formatted output as well as enums for the character representations of
-various symbols from cp437.
+print formatted output.
 
 kbhit.h
 This file, provided by Chris Giese, provides the kbhit() and getch functions
 used to listen for and retrieve raw, single-character input from the keyboard.
 
-maps.h
-This file was being used as a dump file for structs/methods that required the
-inclusion of multiple header files in the resources folder. It has been renamed
-and is intended to be a location for map-related structs and methods.
-
-monster.h
-This file is used for structs/methods related to monsters and their generation.
+monsters.h
+This file is used for structs/functions related to monsters and their generation.
 This may also be the location of monster AI's in the future, but depending on
 how complex they get, they might require their own header or maybe data files.
 
-movement.h
-This file contains the methods required to move monsters in the 8 possible
-directions in a 2-dimensional map constructed of Tile structs.
+genMap.h
+This file is used to define the map size as well as provide the functions
+necessary for randomly generating said map.
