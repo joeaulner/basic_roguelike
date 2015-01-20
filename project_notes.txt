@@ -29,7 +29,7 @@ generating cave-like structures instead.
 
 CURRENT EXECUTABLES:
 
-test.c:
+basic_roguelike.c:
 This file is designed to test the actual implementation of the various aspects
 of rougulikes such as map representation, movement, attack, defense, etc.
 
