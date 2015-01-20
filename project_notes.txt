@@ -11,23 +11,23 @@ to be restructured, renamed, etc. I plan on looking into the Deep C
 presentations and existing github projects in order to determine what the best
 approach will be for structuring my project.
 
-The project will also need to be migrated over to one of my Raspberry Pi
-computers as it matures. More than likely I will still probably be accessing it
-via SSH, but it will allow me to install and utilize additional libraries. I
-would also like for the life of this project to extend past my graduation date.
+I was previously developing this project on my Uiversity's Unix servers on
+which I originally learned C programming, but have migrated it over to one of
+my new Raspberry Pi's with a standard Raspbian setup. I have yet to decide if I
+want to install and utilize the ncurses library (or something similar) for
+portability, and will probably continue to program strictly for the Unix
+environment until the project gets more "advanced" or I have a desire to make
+it function on other systems.
 
-The current map generation algorithm randomly generates rectangular rooms with
-dimensions up to 9 tiles high and 23 tiles wide. A total of 17 rooms are
+The current "map generation" algorithm randomly generates rectangular rooms
+with dimensions up to 9 tiles high and 23 tiles wide. A total of 15 rooms are
 generated. At this point, there is no way to add doors or connect rooms to each
 other via corridors. I am not happy with the room generation at the moment, and
-am looking into alternative strategies.
+am looking into alternative strategies, possibly using cellular automata for
+generating cave-like structures instead.
 
 
 CURRENT EXECUTABLES:
-
-printing_test.c:
-This file is designed to test the various possibilities of printing colored
-output using ansi escape codes.
 
 test.c:
 This file is designed to test the actual implementation of the various aspects
